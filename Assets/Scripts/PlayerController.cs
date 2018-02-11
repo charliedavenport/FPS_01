@@ -36,11 +36,11 @@ public class PlayerController : MonoBehaviour {
     public bool sprintReady;
     public bool sprinting; // need two bools for 3 cases: sprinting, recharging, ready-not-sprinting
     private float minReadySprint; // min amt of sprint resource needed to start sprinting
-    private float sprintTime = 2.0f;
-    private float rechargeTime = 3.0f;
+    private float sprintTime = 1.0f;
+    private float rechargeTime = 5.0f;
 
     private float accell = 15f;
-    private float decell = -2f;
+    private float decell = -15f;
 
     // Use this for initialization
     void Start () {
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
         grounded = false;
         sprint = maxSprint;
         sprintReady = true;
-        minReadySprint = 0.3f * maxSprint;
+        minReadySprint = 0.75f * maxSprint;
         gui.sprintBar.GetComponent<Image>().color = Color.green;
         gui.minSprintReadyBar.color = Color.white;
         runSpeed = baseRunSpeed;
