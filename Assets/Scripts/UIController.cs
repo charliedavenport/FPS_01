@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour {
     public Text speedText;
     public RectTransform sprintBar;
     public Image minSprintReadyBar;
+    public Image maxSprintBar;
 
     public PlayerController player;
 
@@ -30,7 +31,10 @@ public class UIController : MonoBehaviour {
         float x_new = sprintBar.rect.width;
         sprintBar.offsetMin = offset;
 
-
+        if (player.sprintCooldown) {
+            maxSprintBar.color = Color.blue;
+        }
+        else maxSprintBar.color = Color.white;
 
 	}
 }

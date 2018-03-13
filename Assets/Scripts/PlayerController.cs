@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour {
 
     public float sprint;
     public float maxSprint = 1f;
-    public float maxRunSpeed = 10f;
-    public float baseRunSpeed = 5f;
+    public float maxRunSpeed = 15f;
+    public float baseRunSpeed = 7f;
 
     public float mouseSensitivity = 150f;
     public float clampAngle = 80f; // limits rotation up and down (rotX)
@@ -30,14 +30,20 @@ public class PlayerController : MonoBehaviour {
 
     private Rigidbody rb;
 
+    private bool w, a, s, d, shift_down, shift, shift_up, space;
+    private float mouseX, mouseY;
+
     private float rotY;
     private float rotX;
 
+    private bool moving;
     public bool sprintReady;
     public bool sprinting; // need two bools for 3 cases: sprinting, recharging, ready-not-sprinting
-    private float minReadySprint; // min amt of sprint resource needed to start sprinting
-    private float sprintTime = 1.0f;
+    public float minReadySprint; // min amt of sprint resource needed to start sprinting
+    private float sprintTime = 2.0f;
     private float rechargeTime = 5.0f;
+
+    public bool sprintCooldown;
 
     private float accell = 15f;
     private float decell = -15f;
@@ -52,10 +58,20 @@ public class PlayerController : MonoBehaviour {
         gui.sprintBar.GetComponent<Image>().color = Color.green;
         gui.minSprintReadyBar.color = Color.white;
         runSpeed = baseRunSpeed;
+
+        sprintCooldown = false;
         // set in editor instead
         //gui.minSprintReadyBar.transform.Translate((minReadySprint / maxSprint) * gui.maxBarWidth, 0, 0);
 
         //StartCoroutine(speed_decay()); // gotta go fast
+    }
+
+    IEnumerator sprint_cooldown() {
+        // player cannot sprint for one second after sprinting ends
+        sprintCooldown = true;
+        yield return new WaitForSeconds(1.0f);
+        sprintCooldown = false;
+        yield return null;
     }
 
     IEnumerator speed_decay() {
@@ -123,7 +139,7 @@ public class PlayerController : MonoBehaviour {
             yield return new WaitForSeconds(iter_time); // next iteration
         }
 
-        //TODO: handle GUI changes in a separate GUI sprint routine/in OnGUI()
+        //TODO: handle GUI changes in a separate GUI sprint routine, or in OnGUI()
         if (sprint < minReadySprint) {
             gui.sprintBar.GetComponent<Image>().color = Color.red;
             gui.minSprintReadyBar.color = Color.green;
@@ -136,27 +152,49 @@ public class PlayerController : MonoBehaviour {
         sprinting = false;
 
         //runSpeed = 5f;
-
+        //StartCoroutine(sprint_cooldown()); // cooldown and recharge happen simultaneously
         StartCoroutine(sprint_recharge_routine());        
     }//sprint_routine
 	
 	// Update is called once per frame
 	void Update () {
-        bool w = Input.GetKey(KeyCode.W);
-        bool a = Input.GetKey(KeyCode.A);
-        bool s = Input.GetKey(KeyCode.S);
-        bool d = Input.GetKey(KeyCode.D);
+        w = Input.GetKey(KeyCode.W);
+        a = Input.GetKey(KeyCode.A);
+        s = Input.GetKey(KeyCode.S);
+        d = Input.GetKey(KeyCode.D);
 
-        bool moving = (w || a || s || d);
+        moving = (w || a || s || d);
 
-        bool space = Input.GetKeyDown(KeyCode.Space);
+        space = Input.GetKeyDown(KeyCode.Space);
 
-        bool shift = Input.GetKey(KeyCode.LeftShift);
-        bool shift_down = Input.GetKeyDown(KeyCode.LeftShift);
-        bool shift_up = Input.GetKeyUp(KeyCode.LeftShift);
+        shift = Input.GetKey(KeyCode.LeftShift);
+        shift_down = Input.GetKeyDown(KeyCode.LeftShift);
+        shift_up = Input.GetKeyUp(KeyCode.LeftShift);
 
-        float mouseY = -Input.GetAxis("Mouse Y");
-        float mouseX = Input.GetAxis("Mouse X");
+        mouseY = -Input.GetAxis("Mouse Y");
+        mouseX = Input.GetAxis("Mouse X");
+
+	}// update
+
+    private void LateUpdate() {
+
+        rotY += mouseX * mouseSensitivity * Time.deltaTime;
+        rotX += mouseY * mouseSensitivity * Time.deltaTime;
+
+        // limit rotation about the X axis (up and down)
+        rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
+
+        // only transform player capsule about Y-axis
+        Quaternion localRot = Quaternion.Euler(0f, rotY, 0f);
+        transform.rotation = localRot;
+
+        // camera gets rotated about X and Y axes
+        Quaternion cameraRot = Quaternion.Euler(rotX, rotY, 0f);
+        playerCamera.parent.transform.rotation = cameraRot;
+    }// LateUpdate
+
+
+    private void FixedUpdate() {
 
         if (w && !s) { // forward
             float displacement = runSpeed * Time.deltaTime;
@@ -176,20 +214,6 @@ public class PlayerController : MonoBehaviour {
             transform.Translate(displacement, 0, 0);
         }
 
-        rotY += mouseX * mouseSensitivity * Time.deltaTime;
-        rotX += mouseY * mouseSensitivity * Time.deltaTime;
-
-        // limit rotation about the X axis (up and down)
-        rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
-
-        // only transform player capsule about Y-axis
-        Quaternion localRot = Quaternion.Euler(0f, rotY, 0f);
-        transform.rotation = localRot;
-
-        // camera gets rotated about X and Y axes
-        Quaternion cameraRot = Quaternion.Euler(rotX, rotY, 0f);
-        playerCamera.parent.transform.rotation = cameraRot;
-
         // jump
         if (space && grounded) {
             jumping = true;
@@ -201,22 +225,18 @@ public class PlayerController : MonoBehaviour {
         }
 
         // sprint
-        if ((shift_down || shift) && sprintReady && moving && !sprinting) {
+        if ((shift_down || shift) && sprintReady && moving  && !sprinting && !sprintCooldown) {
             StopCoroutine(sprint_recharge_routine());
             StartCoroutine(sprint_routine());
-            
         }
-        
         // stop sprinting
         if (shift_up && sprinting) {
             //StopCoroutine(sprint_routine());
             sprinting = false;
             //StartCoroutine(sprint_recharge_routine());
         }
-	}// update
 
 
-    private void FixedUpdate() {
         // fall faster than the trip up
         float vel_y = rb.velocity.y;
         if ((vel_y < 0 ||vel_y > 8) && vel_y > -maxSpeed) {
@@ -231,5 +251,5 @@ public class PlayerController : MonoBehaviour {
             if (runSpeed > baseRunSpeed) runSpeed += decell * Time.deltaTime;
             else runSpeed = baseRunSpeed;
         }
-    }
+    }// FixedUpdate
 }
