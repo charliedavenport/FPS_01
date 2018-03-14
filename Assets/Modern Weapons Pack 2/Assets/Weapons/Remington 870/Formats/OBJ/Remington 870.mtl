@@ -1,0 +1,64 @@
+# Blender MTL File: 'Remington 870.blend'
+# Material Count: 5
+
+newmtl Bolt
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures 2\\low poly_Remington 870_Bolt_Normal.png
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures 2\\low poly_Remington 870_Bolt_AlbedoTransparency.png
+map_Ks  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures 2\\low poly_Remington 870_Bolt_MetallicSmoothness.png
+
+newmtl Grip
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures 2\\low poly_Remington 870_Grip_Normal.png
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures 2\\low poly_Remington 870_Grip_AlbedoTransparency.png
+map_Ks  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures 2\\low poly_Remington 870_Grip_MetallicSmoothness.png
+
+newmtl Main
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures\\low poly_Remington 870_Main_Normal.png
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures\\low poly_Remington 870_Main_BaseColor.png
+map_Ks  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Remington 870\\Textures\\low poly_Remington 870_Main_Metallic.png
+
+newmtl Material
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\First Person Arms\\Textures 1\\Human_Arms_Low Poly_DefaultMaterial_Normal.png
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\First Person Arms\\Textures 1\\Human_Arms_Low Poly_DefaultMaterial_BaseColor.png
+map_Ks  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\First Person Arms\\Textures 1\\Human_Arms_Low Poly_DefaultMaterial_Roughness.png
+
+newmtl shadeless
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.226583 0.226583 0.226583
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0

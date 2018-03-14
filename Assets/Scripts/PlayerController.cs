@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 
     public UIController gui;
 
-    public CapsuleCollider groundCollider;
+    public BoxCollider groundCollider;
 
     public float runSpeed;
 

@@ -1,0 +1,14 @@
+# Blender MTL File: 'Blast Grenade.blend'
+# Material Count: 1
+
+newmtl Blast_Grenade
+Ns 37.254902
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Bump -bm 0.350042 C:\\Users\\Sameen Ibne\\Desktop\\textures\\GrenadeNM.png
+map_Kd  C:\\Users\\SAMEEN~1\\AppData\\Local\\Temp\\Rar$DIa0.221\\Blender\\Wapons\\GrenadeCL.png

@@ -1,0 +1,80 @@
+# Blender MTL File: 'Bren Light Machine Gun.blend'
+# Material Count: 7
+
+newmtl Copper
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Bren Light Machine Gun\\Textures2\\lowpoly_Bren Light Machine Gun_Copper_AlbedoTransparency.png
+
+newmtl Magazine
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Bren Light Machine Gun\\Textures2\\lowpoly_Bren Light Machine Gun_Magazine_AlbedoTransparency.png
+
+newmtl Material
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\First Person Arms\\Textures 1\\Human_Arms_Low Poly_DefaultMaterial_Normal.png
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\First Person Arms\\Textures 1\\Human_Arms_Low Poly_DefaultMaterial_BaseColor.png
+map_Ks  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\First Person Arms\\Textures 1\\Human_Arms_Low Poly_DefaultMaterial_Roughness.png
+
+newmtl Metal
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Bren Light Machine Gun\\Textures2\\lowpoly_Bren Light Machine Gun_Metal_AlbedoTransparency.png
+
+newmtl Silver
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Bren Light Machine Gun\\Textures2\\lowpoly_Bren Light Machine Gun_Silver_AlbedoTransparency.png
+
+newmtl Wood
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  D:\\Unity Asset Store Packages\\Modern Weapons Pack 2\\Hard Surface Modelling\\Bren Light Machine Gun\\Textures2\\lowpoly_Bren Light Machine Gun_Wood_AlbedoTransparency.png
+
+newmtl shadeless
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.226583 0.226583 0.226583
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0

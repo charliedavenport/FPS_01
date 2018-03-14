@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: 37e21ff593f80af4280996819dad66cc
+timeCreated: 1476034816
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Base Male Mesh.001
+    100002: Bolt
+    100004: bolt
+    100006: bolt_end
+    100008: Camera
+    100010: camera-center-point
+    100012: camera_controller
+    100014: camera_controller_end
+    100016: camera_target
+    100018: camera_target_end
+    100020: charging handle
+    100022: charging handle_end
+    100024: Grip
+    100026: Hands
+    100028: l_armtwist_1
+    100030: l_armtwist_2
+    100032: l_armtwist_2_end
+    100034: l_armtwist_3
+    100036: l_armtwist_3_end
+    100038: l_armtwist_4
+    100040: l_forearm
+    100042: l_IK
+    100044: l_IK_end
+    100046: l_index_low
+    100048: l_index_mid
+    100050: l_index_tip
+    100052: l_index_tip_end
+    100054: l_middle_low
+    100056: l_middle_mid
+    100058: l_middle_tip
+    100060: l_middle_tip_end
+    100062: l_pinky_low
+    100064: l_pinky_mid
+    100066: l_pinky_tip
+    100068: l_pinky_tip_end
+    100070: l_pole
+    100072: l_pole_end
+    100074: l_ring_low
+    100076: l_ring_mid
+    100078: l_ring_tip
+    100080: l_ring_tip_end
+    100082: l_thumb_low
+    100084: l_thumb_mid
+    100086: l_thumb_tip
+    100088: l_thumb_tip_end
+    100090: l_upperarm
+    100092: l_wrist
+    100094: Main
+    100096: r_armtwist_1
+    100098: r_armtwist_2
+    100100: r_armtwist_2_end
+    100102: r_armtwist_3
+    100104: r_armtwist_3_end
+    100106: r_armtwist_4
+    100108: r_armtwist_4_end
+    100110: r_forearm
+    100112: r_IK
+    100114: r_IK_end
+    100116: r_index_low
+    100118: r_index_mid
+    100120: r_index_tip
+    100122: r_index_tip_end
+    100124: r_middle_low
+    100126: r_middle_mid
+    100128: r_middle_tip
+    100130: r_middle_tip_end
+    100132: r_pinky_low
+    100134: r_pinky_mid
+    100136: r_pinky_tip
+    100138: r_pinky_tip_end
+    100140: r_pole
+    100142: r_pole_end
+    100144: r_ring_low
+    100146: r_ring_mid
+    100148: r_ring_tip
+    100150: r_ring_tip_end
+    100152: r_thumb_low
+    100154: r_thumb_mid
+    100156: r_thumb_tip
+    100158: r_thumb_tip_end
+    100160: r_upperarm
+    100162: r_wrist
+    100164: //RootNode
+    100166: root
+    100168: Sun.000
+    100170: Sun.001
+    100172: Sun.003
+    100174: watch
+    100176: watch_end
+    100178: weapon
+    400000: Base Male Mesh.001
+    400002: Bolt
+    400004: bolt
+    400006: bolt_end
+    400008: Camera
+    400010: camera-center-point
+    400012: camera_controller
+    400014: camera_controller_end
+    400016: camera_target
+    400018: camera_target_end
+    400020: charging handle
+    400022: charging handle_end
+    400024: Grip
+    400026: Hands
+    400028: l_armtwist_1
+    400030: l_armtwist_2
+    400032: l_armtwist_2_end
+    400034: l_armtwist_3
+    400036: l_armtwist_3_end
+    400038: l_armtwist_4
+    400040: l_forearm
+    400042: l_IK
+    400044: l_IK_end
+    400046: l_index_low
+    400048: l_index_mid
+    400050: l_index_tip
+    400052: l_index_tip_end
+    400054: l_middle_low
+    400056: l_middle_mid
+    400058: l_middle_tip
+    400060: l_middle_tip_end
+    400062: l_pinky_low
+    400064: l_pinky_mid
+    400066: l_pinky_tip
+    400068: l_pinky_tip_end
+    400070: l_pole
+    400072: l_pole_end
+    400074: l_ring_low
+    400076: l_ring_mid
+    400078: l_ring_tip
+    400080: l_ring_tip_end
+    400082: l_thumb_low
+    400084: l_thumb_mid
+    400086: l_thumb_tip
+    400088: l_thumb_tip_end
+    400090: l_upperarm
+    400092: l_wrist
+    400094: Main
+    400096: r_armtwist_1
+    400098: r_armtwist_2
+    400100: r_armtwist_2_end
+    400102: r_armtwist_3
+    400104: r_armtwist_3_end
+    400106: r_armtwist_4
+    400108: r_armtwist_4_end
+    400110: r_forearm
+    400112: r_IK
+    400114: r_IK_end
+    400116: r_index_low
+    400118: r_index_mid
+    400120: r_index_tip
+    400122: r_index_tip_end
+    400124: r_middle_low
+    400126: r_middle_mid
+    400128: r_middle_tip
+    400130: r_middle_tip_end
+    400132: r_pinky_low
+    400134: r_pinky_mid
+    400136: r_pinky_tip
+    400138: r_pinky_tip_end
+    400140: r_pole
+    400142: r_pole_end
+    400144: r_ring_low
+    400146: r_ring_mid
+    400148: r_ring_tip
+    400150: r_ring_tip_end
+    400152: r_thumb_low
+    400154: r_thumb_mid
+    400156: r_thumb_tip
+    400158: r_thumb_tip_end
+    400160: r_upperarm
+    400162: r_wrist
+    400164: //RootNode
+    400166: root
+    400168: Sun.000
+    400170: Sun.001
+    400172: Sun.003
+    400174: watch
+    400176: watch_end
+    400178: weapon
+    2300000: camera-center-point
+    3300000: camera-center-point
+    4300000: camera-center-point
+    4300002: Base Male Mesh.001
+    4300004: Main
+    4300006: Bolt
+    4300008: Grip
+    7400000: Hands|reference
+    7400002: Hands|Remington 870_Fire
+    7400004: Hands|Remington 870_Take In
+    7400006: Hands|Remington 870_Take Out
+    7400008: Hands|Remington_Reload
+    9500000: //RootNode
+    13700000: Base Male Mesh.001
+    13700002: Bolt
+    13700004: Grip
+    13700006: Main
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

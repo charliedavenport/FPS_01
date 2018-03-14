@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 7728d7bba37d5fa46b6861d1050afb61
+timeCreated: 1476034868
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube.004
+    100004: Cube.005
+    100006: Cube.006
+    100008: Cube.007
+    100010: Cylinder.000
+    100012: Cylinder.001
+    100014: Cylinder.005
+    100016: Cylinder.008
+    100018: Cylinder.009
+    100020: Cylinder.010
+    100022: Cylinder.011
+    100024: Cylinder.012
+    100026: Cylinder.013
+    100028: Cylinder.014
+    100030: Cylinder.015
+    100032: Cylinder.015_MeshPart0
+    100034: Cylinder.015_MeshPart1
+    100036: Sphere.001
+    100038: Sphere.001_MeshPart0
+    100040: Sphere.001_MeshPart1
+    100042: Sphere.001_MeshPart2
+    100044: Sphere.001_MeshPart3
+    100046: Sphere.001_MeshPart4
+    100048: Sphere.003
+    100050: Sphere.003_MeshPart0
+    100052: Sphere.003_MeshPart1
+    100054: Sphere.003_MeshPart2
+    100056: Sphere.003_MeshPart3
+    100058: Sphere.003_MeshPart4
+    400000: //RootNode
+    400002: Cube.004
+    400004: Cube.005
+    400006: Cube.006
+    400008: Cube.007
+    400010: Cylinder.000
+    400012: Cylinder.001
+    400014: Cylinder.005
+    400016: Cylinder.008
+    400018: Cylinder.009
+    400020: Cylinder.010
+    400022: Cylinder.011
+    400024: Cylinder.012
+    400026: Cylinder.013
+    400028: Cylinder.014
+    400030: Cylinder.015
+    400032: Cylinder.015_MeshPart0
+    400034: Cylinder.015_MeshPart1
+    400036: Sphere.001
+    400038: Sphere.001_MeshPart0
+    400040: Sphere.001_MeshPart1
+    400042: Sphere.001_MeshPart2
+    400044: Sphere.001_MeshPart3
+    400046: Sphere.001_MeshPart4
+    400048: Sphere.003
+    400050: Sphere.003_MeshPart0
+    400052: Sphere.003_MeshPart1
+    400054: Sphere.003_MeshPart2
+    400056: Sphere.003_MeshPart3
+    400058: Sphere.003_MeshPart4
+    2300000: Cube.004
+    2300002: Cube.005
+    2300004: Cube.006
+    2300006: Cube.007
+    2300008: Cylinder.000
+    2300010: Cylinder.001
+    2300012: Cylinder.005
+    2300014: Cylinder.008
+    2300016: Cylinder.009
+    2300018: Cylinder.010
+    2300020: Cylinder.011
+    2300022: Cylinder.012
+    2300024: Cylinder.013
+    2300026: Cylinder.014
+    2300028: Cylinder.015_MeshPart0
+    2300030: Cylinder.015_MeshPart1
+    2300032: Sphere.001_MeshPart0
+    2300034: Sphere.001_MeshPart1
+    2300036: Sphere.001_MeshPart2
+    2300038: Sphere.001_MeshPart3
+    2300040: Sphere.001_MeshPart4
+    2300042: Sphere.003_MeshPart0
+    2300044: Sphere.003_MeshPart1
+    2300046: Sphere.003_MeshPart2
+    2300048: Sphere.003_MeshPart3
+    2300050: Sphere.003_MeshPart4
+    3300000: Cube.004
+    3300002: Cube.005
+    3300004: Cube.006
+    3300006: Cube.007
+    3300008: Cylinder.000
+    3300010: Cylinder.001
+    3300012: Cylinder.005
+    3300014: Cylinder.008
+    3300016: Cylinder.009
+    3300018: Cylinder.010
+    3300020: Cylinder.011
+    3300022: Cylinder.012
+    3300024: Cylinder.013
+    3300026: Cylinder.014
+    3300028: Cylinder.015_MeshPart0
+    3300030: Cylinder.015_MeshPart1
+    3300032: Sphere.001_MeshPart0
+    3300034: Sphere.001_MeshPart1
+    3300036: Sphere.001_MeshPart2
+    3300038: Sphere.001_MeshPart3
+    3300040: Sphere.001_MeshPart4
+    3300042: Sphere.003_MeshPart0
+    3300044: Sphere.003_MeshPart1
+    3300046: Sphere.003_MeshPart2
+    3300048: Sphere.003_MeshPart3
+    3300050: Sphere.003_MeshPart4
+    4300000: Cylinder.001
+    4300002: Cylinder.000
+    4300004: Cylinder.005
+    4300006: Cylinder.015_MeshPart0
+    4300008: Cylinder.015_MeshPart1
+    4300010: Cube.007
+    4300012: Cube.006
+    4300014: Cylinder.014
+    4300016: Cylinder.013
+    4300018: Cylinder.012
+    4300020: Sphere.003_MeshPart0
+    4300022: Sphere.003_MeshPart1
+    4300024: Sphere.003_MeshPart2
+    4300026: Sphere.003_MeshPart3
+    4300028: Sphere.003_MeshPart4
+    4300030: Sphere.001_MeshPart0
+    4300032: Sphere.001_MeshPart1
+    4300034: Sphere.001_MeshPart2
+    4300036: Sphere.001_MeshPart3
+    4300038: Sphere.001_MeshPart4
+    4300040: Cylinder.011
+    4300042: Cube.005
+    4300044: Cube.004
+    4300046: Cylinder.010
+    4300048: Cylinder.009
+    4300050: Cylinder.008
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
