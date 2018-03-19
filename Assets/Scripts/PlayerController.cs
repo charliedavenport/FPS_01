@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
 
     public BoxCollider groundCollider;
 
+    private PlayerInput pInput;
+
     public float runSpeed;
 
     public float sprint;
